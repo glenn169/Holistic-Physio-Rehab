@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(39, 84, 102, 0.75)), url(/images/cove.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #226d99;
+    opacity: .8;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    margin-left: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block; 
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.side-menu {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #226d99;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.side-menu.active {
+    width: 250px;
+    display: block;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.side-menu ul li {
+    padding: 8px 8px;
+}
+
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 8px;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: azure;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 30px;
+    margin-top: 15%;
+    font-family: "Miniver", cursive;
+    color: rgb(156, 190, 219);
+    font-weight: 400;
+}
+
+.content h3 {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 35px;
+}
+
+@media screen and (max-width: 764px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    /* Navbar */
+    .navbar{
+        display: none;
+    }
+
+    /* Menu Toggle Button */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    /* Banner Text */
+    .content h1 {
+        font-size: 90px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+}
