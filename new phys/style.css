@@ -27,7 +27,7 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(39, 84, 102, 0.75)), url(/images/cove.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(39, 84, 102, 0.75)), url(https://github.com/glenn169/Holistic-Physio-Rehab/blob/main/new%20phys/images/cove.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -104,66 +104,6 @@ margin: 0 5px;
 
 
 
-/* .navbar {
-    width: 100%;
-    margin: auto;
-    padding: 30px 0;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    background-color: cornflowerblue;
-    opacity: .8;
-    justify-content: space-between;
-    z-index: 10000;
-    
-}
-
-.navbar h1 {
-    margin-left: 20px;
-    cursor: pointer;
-    font-family: "DM Serif Text", serif;
-    font-weight: 300;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-}
-
-.navbar ul li {
-    list-style: none;
-    display: inline-block; 
-    margin: 0 20px;
-    position: relative;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #fcfbfc;
-    font-weight: 200;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: white;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-
-.navbar ul li:hover::after {
-    width: 100%;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-.side-menu{
-    display: none;
-} */
 
 .content{
     width: 100%;
@@ -179,7 +119,6 @@ margin: 0 5px;
 
 .content h1{
     font-size: 70px;
-    /* font-family: "Pacifico",cursive; */
     font-family: "DM Serif Text", serif;
     color: rgb(156, 190, 219);
     font-weight: 400;
@@ -971,7 +910,7 @@ section{
     .banner{
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(39, 84, 102, 0.75)), url(/images/cove.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(39, 84, 102, 0.75)), url(https://github.com/glenn169/Holistic-Physio-Rehab/blob/main/new%20phys/images/cove.jpg);
         background-size: auto;
         background-attachment: fixed;
     }
